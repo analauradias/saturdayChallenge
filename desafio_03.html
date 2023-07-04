@@ -52,4 +52,69 @@
 
     Ao final, o programa deverá informar o valor total a ser pago pelo aluguel do veículo, considerando o valor do veículo, o valor do seguro (caso contratado), a quantidade de dias que o veículo foi alugado, a quantidade de Km percorrida (e o adicional pago por Km percorrido, se for o caso), o valor das avarias (caso houverem) e a forma de pagamento escolhida pelo usuário.
     */
+
+    let veiculo = prompt('Insira qual tipo de veículo você deseja (carro, moto ou caminhão)').trim().toLowerCase();
+
+    if (veiculo != 'carro' && veiculo != 'caminhão' && veiculo != 'moto') {
+        alert(`Resposta inválida! Tente novamente`);
+
+        veiculo = prompt('Insira qual tipo de veículo você deseja (carro, moto ou caminhão)').trim().toLowerCase();
+
+        if (veiculo != 'carro' && veiculo != 'caminhão' && veiculo != 'moto') {
+            alert(`Resposta inválida! Tente novamente`);
+
+            veiculo = prompt('Insira qual tipo de veículo você deseja (carro, moto ou caminhão)').trim().toLowerCase();
+
+            if (veiculo != 'carro' && veiculo != 'caminhão' && veiculo != 'moto') {
+                alert(`Programa encerrado! Excesso de tentativas!`);
+
+            }
+        }
+    }
+
+
+    if (veiculo == 'carro' || veiculo == 'caminhão') {
+        let categoria = Number(prompt('Insira a categoria que pretende. Responda com: 1-Econômico, 2-Intermediário ou 3-Luxo.)').trim());
+        if (categoria != 1 && categoria != 2 && categoria != 3) {
+            alert(`Resposta inaválida! Tente novamente`);
+
+            categoria = Number(prompt('Insira a categoria que pretende. Responda com: 1-Econômico, 2-Intermediário ou 3-Luxo.)').trim());
+
+            if (categoria != 1 && categoria != 2 && categoria != 3) {
+                alert(`Resposta inaválida! Tente novamente`);
+
+                categoria = Number(prompt('Insira a categoria que pretende. Responda com: 1-Econômico, 2-Intermediário ou 3-Luxo.)').trim());
+
+                if (categoria != 1 && categoria != 2 && categoria != 3) {
+                    alert(`Programa encerrado! Excesso de tentativas!`);
+
+
+                }
+
+            }
+        }
+    }
+    
+    if(veiculo == 'moto'){
+        let categoria2 = Number(prompt('Insira a categoria que pretende. Responda com: 1-Pequeno, 2-Médio ou 3-Grande.)').trim());
+        if (categoria != 1 && categoria != 2 && categoria != 3) {
+            alert(`Resposta inaválida! Tente novamente`);
+
+            categoria = Number(prompt('Insira a categoria que pretende. Responda com: 1-Pequeno, 2-Médio ou 3-Grande.)').trim());
+
+            if (categoria != 1 && categoria != 2 && categoria != 3) {
+                alert(`Resposta inaválida! Tente novamente`);
+
+                categoria = Number(prompt('Insira a categoria que pretende. Responda com: 1-Pequeno, 2-Médio ou 3-Grande.)').trim());
+
+                if (categoria != 1 && categoria != 2 && categoria != 3) {
+                    alert(`Programa encerrado! Excesso de tentativas!`);
+
+
+                }
+
+            }
+        }
+    }
+
 </script>
